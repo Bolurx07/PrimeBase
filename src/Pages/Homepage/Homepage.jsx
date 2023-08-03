@@ -27,7 +27,9 @@ const Homepage = () => {
 
   return (
     <div>
-        
+        <button>Request for Loan</button>
+        <button>Get all Loan Request</button>
+        <button>Get Repayment Schedule</button>
     </div>
   )
 }
