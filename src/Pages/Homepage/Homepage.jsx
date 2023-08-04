@@ -11,7 +11,7 @@ const Homepage = () => {
         const getUserData = () => {
             try {
                 axios
-                .get('https://api.postman.com/collections/17034879-eedd174f-d366-4d21-a137-38b5bce9d1e0?access_key=PMAT-01H6XA4YB57HM3C1F2A9Y0HTSG')
+                .get('https://okigwecreations.online/api/')
                 .then((result) => {
                         const singleUser = result;
                         console.log(singleUser);
