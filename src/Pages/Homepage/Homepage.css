@@ -1,0 +1,19 @@
+.mainPage{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.textpage{
+    padding: 0 1rem;
+}
+
+.textpage h2{
+    font-size: 3rem;
+}
+
+.textpage h4{
+    font-weight: 200;
+}
+
