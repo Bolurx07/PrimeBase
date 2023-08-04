@@ -40,17 +40,17 @@ const Homepage = () => {
                     borrowing experience, providing you with the funds you 
                     need in a timely manner to meet your financial requirements.
                 </h4>
-                <button>Get all Loan Request</button>
-                <button>Get Repayment Schedule</button>
+                <div className='pagebutton'>
+                    <button>Get all Loan Request</button>
+                    <button>Get Repayment Schedule</button>
+                </div>
             </div>
             <div className='textpage2'>
                 <img src={bckImg} alt="homepage pic" />
             </div>
         </div>
 
-        <button>Request for Loan</button>
-        <button>Get all Loan Request</button>
-        <button>Get Repayment Schedule</button>
+
     </div>
   )
 }
