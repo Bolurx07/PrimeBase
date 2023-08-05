@@ -29,7 +29,7 @@
 }
 
 #duration{
-    width: 7.5rem;
+    width: 7rem;
 
 }
 
@@ -64,15 +64,15 @@
     }
 
     #name{
-        width: 8rem;
+        width: 7rem;
     }
     
     #loan{
-        width: 6.5rem;
+        width: 5.5rem;
     }
     
     #duration{
-        width: 3.5rem;
+        width: 2.1rem;
     
     }
 }
