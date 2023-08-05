@@ -6,9 +6,9 @@ import axios from 'axios';
 
 const Request = () => {
 
-    // const [loanRequest, setLoanRequest] = useState({
+    const [loanRequest, setLoanRequest] = useState({
         
-    // })
+    })
 
     
     
@@ -40,23 +40,31 @@ const Request = () => {
         }
 
         axios.post('https://okigwecreations.online/api/', values, config)
-        .then(response => console.log(response))
+        .then((response) => { 
+            const myRes = response; 
+            setLoanRequest(myRes);}
+        )
         .catch(err => console.log(err))
     }
 
   return (
     <div>
-        <form onSubmit={handleSubmit} >
-            <label htmlFor="">Full Name</label>
-            <input type='text'  name='full_name'></input>
+        <h3 className='formHead'>Please fill your loan request</h3>
+        <form onSubmit={handleSubmit} className='formDiv' >
+            <label htmlFor="full_name">Full Name:</label>
+            <input type='text' id='name' name='full_name'></input>
             <br />
-            <label htmlFor="">Loan Amount</label>
-            <input type='text'  name='loan_amount'></input>
             <br />
-            <label htmlFor="">Repayment Duration</label>
-            <input type='text'  name='repayment_duration'></input>
+            <label htmlFor="loan_amount">Loan Amount:</label>
+            <input type='text' id='loan' name='loan_amount'></input>
+            <br />
+            <br />
+            <label htmlFor="repayment_duration">Repayment Duration:</label>
+            <input type='text' id='duration' name='repayment_duration'></input>
+            <br />
             <br />
             <button type='submit'>Submit</button>
+            {loanRequest.statusText === "OK" ? <span className='err'>Form submitted</span> : <span className='err'>Input these fields</span>}
         </form>
     </div>
   )

@@ -29,9 +29,8 @@ const Homepage = () => {
     // }, []);
 
   return (
-    <div>
-        <Navbar />
-
+    <div className='homepage'>
+        {/* <Navbar /> */}
         <div className='mainPage'>
             <div className='textpage'>
                 <h2>Quick and Easy Loans for Your Financial Needs.</h2>

@@ -7,10 +7,13 @@ import Navbar from './Components/Navbar/Navbar';
 
 function App() {
   return (
-    <Routes>
-      <Route path='/' element={<Homepage />}/>
-      <Route path='Request' element={<Request />}/>
-    </Routes>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Homepage />}/>
+        <Route path='Request' element={<Request />}/>
+      </Routes>
+    </>
   );
 }
 

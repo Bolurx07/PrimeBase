@@ -13,6 +13,11 @@
     cursor: pointer;
 }
 
+.myNav a{
+    text-decoration:  none;
+
+}
+
 .mininav{
     display: flex;
     align-items: center;
@@ -20,6 +25,10 @@
     width: 30%;
     transition: 3s;
   
+}
+
+.mininav a{
+    color: black;
 }
 
 .mininav p{
@@ -56,6 +65,14 @@
 .loanButton:hover{
     color: black;
     border: 2px solid black;
+}
 
+@media screen and (max-width: 700px) {
+    .mininav{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
 
 }
