@@ -1,6 +1,4 @@
-.homepage{
-    margin-top: 3rem;
-}
+
 .mainPage{
     display: flex;
     justify-content: space-around; 
@@ -53,3 +51,61 @@
     color: black;
     border: 2px solid black;
 }
+
+
+@media screen and (max-width: 1026px) {
+    .textpage2 img{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .textpage h2{
+        font-size: 2rem;
+    
+    }
+    
+    .textpage h4{
+        font-weight: 200;
+        margin: 0 auto;
+        font-size: 0.75rem;
+    }
+
+    .pagebutton button{
+        font-size: 0.75rem;
+
+    }
+    }
+
+    @media screen and (max-width: 575px) {
+        .textpage2 img{
+            display: none;
+        }
+
+        .pagebutton{
+            padding: 0;
+        }
+
+        .textpage h2, .textpage h4{
+            text-align: center;
+        }
+
+        .textpage h4{
+            margin-top: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+        .textpage h2{
+            font-size: 1.5rem;
+        }
+
+        .textpage h4{
+            font-size: 0.5rem;
+        }
+
+        .pagebutton button{
+            font-size: 0.5rem;
+    
+        }
+    }

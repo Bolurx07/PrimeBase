@@ -2,7 +2,6 @@ import React from 'react';
 import './Homepage.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import Navbar from '../../Components/Navbar/Navbar';
 import bckImg from '../../Assets/bckgrndimg.svg';
 
 
@@ -14,7 +13,7 @@ const Homepage = () => {
     //     const getUserData = () => {
     //         try {
     //             axios
-    //             .get('https://okigwecreations.online/request_for_loan/')
+    //             .get('https://okigwecreations.online/api/')
     //             .then((result) => {
     //                     const singleUser = result;
     //                     console.log(singleUser);
@@ -29,8 +28,7 @@ const Homepage = () => {
     // }, []);
 
   return (
-    <div className='homepage'>
-        {/* <Navbar /> */}
+    <>
         <div className='mainPage'>
             <div className='textpage'>
                 <h2>Quick and Easy Loans for Your Financial Needs.</h2>
@@ -48,9 +46,7 @@ const Homepage = () => {
                 <img src={bckImg} alt="homepage pic" />
             </div>
         </div>
-
-
-    </div>
+    </>
   )
 }
 
